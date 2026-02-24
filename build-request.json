@@ -1,0 +1,37 @@
+{
+  "kind": "build_request",
+  "title": "Capitalize 'C' and 'H' in Hero headline",
+  "projectName": "Medina Valley Homes",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-18",
+      "text": "In `frontend/src/components/Hero.tsx`, update the hero headline text from 'Medina Valley custom homes' to 'Medina Valley Custom Homes' — capitalizing the 'C' in 'Custom' and the 'H' in 'Homes'.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "make the \"custom homes\" C and H capitalized"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The Hero section headline reads exactly 'Medina Valley Custom Homes' with capital C and capital H.",
+        "No other text, layout, or styling in Hero.tsx is changed."
+      ]
+    }
+  ],
+  "constraints": [
+    "Only change the capitalization of the headline text. Do not alter any other content, styling, or logic."
+  ],
+  "nonGoals": [
+    "Changing any other section headlines or copy.",
+    "Modifying Hero section layout, imagery, or CTA buttons.",
+    "Any backend changes."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

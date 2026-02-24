@@ -1,0 +1,24 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-in-frontend-src-components-hero-tsx-update-the-hero-headline-text-from-medina-valley-custom-homes-to-medina-valley-custom-homes-capitalizing-the-c-in-custom-and-the-h-in-homes",
+      "featureTitle": "In `frontend/src/components/Hero.tsx`, update the hero headline text from 'Medina Valley custom homes' to 'Medina Valley Custom Homes' — capitalizing the 'C' in 'Custom' and the 'H' in 'Homes'.",
+      "files": [
+        "frontend/src/components/Hero.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-18"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

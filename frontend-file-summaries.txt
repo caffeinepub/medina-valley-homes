@@ -1,0 +1,19 @@
+{
+  "frontend/src/index.css": "Global styles with Medina Valley Homes navy/blue OKLCH color palette — deep navy primary, bright blue accent, light blue-gray secondary, replacing all warm earth tone tokens. Maintains Playfair Display and Inter fonts with smooth scroll.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with navy and blue palette token sets replacing all warm earth tone (sand/earth/terracotta) tokens, updated luxury box shadows to navy-toned, and all standard shadcn/ui theme mappings preserved.",
+  "frontend/index.html": "HTML entry point with SEO meta tags, Local Business JSON-LD schema markup for Medina Valley Homes, and Google Fonts preconnect for Playfair Display and Inter.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for backend integration — useGetLeads, useSubmitLead, and new useSubmitChatLead mutation that calls the backend submitChatLead function with lead data and invalidates the leads cache.",
+  "frontend/src/components/Header.tsx": "Sticky navigation header with MVH logo image + \"Medina Valley Homes\" text lockup, navy background when scrolled, bright blue accent CTA button, and mobile hamburger menu — all warm tones replaced with navy/blue palette.",
+  "frontend/src/components/Hero.tsx": "Full-viewport hero section with H1 headline updated to \"Medina Valley Custom Homes\" (both C and H capitalized), navy gradient overlay, CTA buttons, phone link, and scroll indicator — all other content and styling unchanged.",
+  "frontend/src/components/Location.tsx": "Location section with benefit cards and map — color tokens unchanged structurally but now resolve to navy/blue palette via updated CSS variables.",
+  "frontend/src/components/LotMap.tsx": "Interactive SVG lot map with status colors updated to navy/blue palette (available=light blue, model=navy-tinted, phase2=pale blue), SVG text colors updated from warm brown to navy tones.",
+  "frontend/src/components/FloorPlans.tsx": "Floor plans section with 4 plan cards and detail dialog — badge for available plans uses navy primary background, outline button uses accent blue, all warm tone references removed.",
+  "frontend/src/components/BuildOptions.tsx": "Build options section with four option cards — color tokens resolve to navy/blue palette; no structural changes needed beyond theme token updates.",
+  "frontend/src/components/WhyChoose.tsx": "Why Choose section with benefits list and founder card — color tokens resolve to navy/blue palette; no structural changes needed.",
+  "frontend/src/components/PriorityListForm.tsx": "Priority List lead capture form — submit button and success state use accent blue, outline button updated with blue border/hover, all warm tone references removed.",
+  "frontend/src/components/Contact.tsx": "Contact section with business info cards and map — color tokens resolve to navy/blue palette; no structural changes needed.",
+  "frontend/src/components/Footer.tsx": "Site footer with MVH logo image + text lockup replacing the icon-only brand, navy primary background, blue-300 heart icon for caffeine.ai attribution, and all warm tone references removed.",
+  "frontend/src/pages/AdminPage.tsx": "Admin page displaying all priority list and chatbot leads in a table — adds the missing `BudgetRange.unknown_` entry to the budget label map, and visually distinguishes chatbot leads with an accent-colored \"Chatbot\" badge in the Lot/Source column.",
+  "frontend/src/App.tsx": "Main app with TanStack Router — ChatBot is mounted globally in the root route layout so it appears on all pages (homepage and /admin).",
+  "frontend/src/components/ChatBot.tsx": "Floating AI Sales Assistant chatbot fixed to the bottom-right corner — rule-based qualification flow (intent → qualify → route → lead capture), objection handling, and backend lead submission via useSubmitChatLead, styled in the navy/blue palette."
+}

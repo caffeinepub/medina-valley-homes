@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Custom home builder website for Medina Valley Homes (Dennis@tx.properties, (210) 393-9794). Pre-construction community west of San Antonio in Medina County, TX. Goal: generate qualified leads and early reservations. Site color palette updated from warm earth tones to navy/blue scheme matching the uploaded logo (#0D1B2A navy, #2B7FD4 bright blue, white accents). Logo (icon + text) displayed in header.",
+  "architectural_notes": [
+    "Lead form submissions stored in Internet Computer backend; include simple admin view to retrieve leads",
+    "Use OpenStreetMap (no API key) for both Location and Contact section maps",
+    "Lot map is placeholder with ~20 numbered lots in organic layout; designed to be updatable with real data later",
+    "Color palette: navy (#0D1B2A), bright blue (#2B7FD4), white — replaces original warm earth tone theme site-wide",
+    "Chatbot lead submissions stored in the same IC backend table as Priority List form leads; admin view should display both"
+  ],
+  "known_issues": [
+    "Initial full build attempt failed; using simplified step-by-step build approach"
+  ],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-build-a-sticky-top-navigation-header-with-the-medina-valley-homes-logo-name-nav-links-home-homesites-floor-plans-build-options-about-contact-and-a-prominent-mobile-call-button-linking-to-tel-210-393-9794-header-should-remain-fixed-on-scroll-with-a-clean-high-end-appearance",
+      "title": "Build a sticky top navigation header with the Medina Valley Homes logo/name, nav links (Home, Homesites, Floor Plans, Build Options, About, Contact), and a prominent mobile call button linking to tel:(210)393-9794. Header should remain fixed on scroll with a clean, high-end appearance.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-full-viewport-hero-section-with-headline-custom-homes-in-medina-valley-just-west-of-san-antonio-subheadline-spacious-homesites-modern-craftsmanship-built-for-texas-living-two-primary-cta-buttons-view-available-homesites-and-join-priority-list-that-smooth-scroll-to-respective-sections-a-secondary-call-link-210-393-9794-and-a-generated-hero-background-image-of-open-texas-ranch-land-medina-county-landscape",
+      "title": "Build a full-viewport Hero section with: headline 'Custom Homes in Medina Valley — Just West of San Antonio', subheadline 'Spacious homesites. Modern craftsmanship. Built for Texas living.', two primary CTA buttons ('View Available Homesites' and 'Join Priority List' that smooth-scroll to respective sections), a secondary call link '(210) 393-9794', and a generated hero background image of open Texas ranch land / Medina County landscape.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-location-section-with-headline-build-in-the-heart-of-medina-county-descriptive-body-copy-about-the-location-west-of-san-antonio-near-castroville-lacoste-and-rio-medina-larger-lots-quieter-lifestyle-easy-commute-and-an-embedded-openstreetmap-iframe-centered-on-the-medina-valley-castroville-tx-region-approximately-29-35-n-98-87-w-no-google-maps-api-required",
+      "title": "Build a Location section with headline 'Build in the Heart of Medina County', descriptive body copy about the location (west of San Antonio, near Castroville, LaCoste, and Rio Medina, larger lots, quieter lifestyle, easy commute), and an embedded OpenStreetMap iframe centered on the Medina Valley / Castroville, TX region (approximately 29.35°N, 98.87°W). No Google Maps API required.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-interactive-lot-map-section-with-approximately-20-numbered-placeholder-lots-displayed-in-an-organic-grid-layout-using-svg-or-css-each-lot-must-have-a-status-indicator-available-reserved-model-coming-soon-phase-1-phase-2-shown-by-color-coding-a-clickable-popup-modal-showing-lot-number-lot-size-e-g-0-5-1-2-acres-estimated-build-timeline-and-a-request-info-on-this-lot-button-that-scrolls-to-the-priority-list-form-with-that-lot-pre-selected",
+      "title": "Build an Interactive Lot Map section with approximately 20 numbered placeholder lots displayed in an organic grid layout using SVG or CSS. Each lot must have: a status indicator (Available, Reserved, Model Coming Soon, Phase 1, Phase 2) shown by color coding, a clickable popup/modal showing lot number, lot size (e.g. 0.5–1.2 acres), estimated build timeline, and a 'Request Info on This Lot' button that scrolls to the Priority List form with that lot pre-selected.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-floor-plans-section-with-4-placeholder-plan-cards-each-card-displays-plan-name-e-g-the-medina-the-castroville-the-rio-the-valley-bedroom-count-3-5-br-bathroom-count-2-3-5-ba-square-footage-range-pricing-label-pricing-coming-soon-or-starting-from-xxx-xxx-a-view-details-button-opens-an-expanded-detail-modal-and-an-inquire-button-that-scrolls-to-the-priority-list-form",
+      "title": "Build a Floor Plans section with 4 placeholder plan cards. Each card displays: plan name (e.g. The Medina, The Castroville, The Rio, The Valley), bedroom count (3–5 BR), bathroom count (2–3.5 BA), square footage range, pricing label ('Pricing Coming Soon' or 'Starting from $XXX,XXX'), a 'View Details' button (opens an expanded detail modal), and an 'Inquire' button that scrolls to the Priority List form.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-build-options-section-with-headline-build-your-custom-home-in-medina-valley-descriptive-content-covering-semi-custom-options-fully-custom-builds-lot-build-packages-and-design-consultation-availability-include-a-prominent-cta-button-schedule-a-design-consultation-that-scrolls-to-the-priority-list-form",
+      "title": "Build a Build Options section with headline 'Build Your Custom Home in Medina Valley', descriptive content covering semi-custom options, fully custom builds, lot + build packages, and design consultation availability. Include a prominent CTA button 'Schedule a Design Consultation' that scrolls to the Priority List form.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-why-choose-medina-valley-homes-section-with-the-following-bullet-points-local-medina-county-builder-flexible-design-options-energy-efficient-construction-transparent-pricing-direct-communication-with-builder-limited-phase-1-availability-include-a-founder-owner-placeholder-photo-area-avatar-placeholder-with-a-short-credibility-paragraph-about-the-builder",
+      "title": "Build a 'Why Choose Medina Valley Homes' section with the following bullet points: Local Medina County builder, Flexible design options, Energy-efficient construction, Transparent pricing, Direct communication with builder, Limited Phase 1 availability. Include a founder/owner placeholder photo area (avatar placeholder) with a short credibility paragraph about the builder.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-priority-list-lead-capture-section-with-headline-secure-your-spot-in-phase-1-and-urgency-copy-limited-homesites-available-early-reservations-receive-priority-pricing-the-form-must-include-fields-full-name-email-phone-budget-range-dropdown-under-300k-300k-400k-400k-500k-500k-desired-build-timeline-dropdown-interested-lot-dropdown-with-lots-1-20-not-sure-message-textarea-and-a-cta-button-join-priority-list-on-submit-call-the-backend-submitlead-function-and-show-a-success-confirmation-connect-to-the-motoko-backend-via-the-generated-canister-bindings",
+      "title": "Build a Priority List lead capture section with headline 'Secure Your Spot in Phase 1' and urgency copy 'Limited homesites available. Early reservations receive priority pricing.' The form must include fields: Full Name, Email, Phone, Budget Range (dropdown: Under $300K, $300K–$400K, $400K–$500K, $500K+), Desired Build Timeline (dropdown), Interested Lot (dropdown with lots 1–20 + 'Not Sure'), Message (textarea), and a CTA button 'Join Priority List'. On submit, call the backend submitLead function and show a success confirmation. Connect to the Motoko backend via the generated canister bindings.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-simple-admin-page-at-route-admin-that-fetches-and-displays-all-priority-list-submissions-from-the-backend-getleads-function-in-a-readable-table-name-email-phone-budget-timeline-lot-message-submission-timestamp-no-authentication-required-for-this-initial-version",
+      "title": "Build a simple admin page at route /admin that fetches and displays all Priority List submissions from the backend getLeads function in a readable table (Name, Email, Phone, Budget, Timeline, Lot, Message, submission timestamp). No authentication required for this initial version.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-contact-section-displaying-business-info-medina-valley-homes-210-393-9794-dennis-tx-properties-a-clickable-phone-link-and-email-link-and-a-second-embedded-openstreetmap-showing-the-medina-valley-castroville-area",
+      "title": "Build a Contact section displaying business info (Medina Valley Homes, (210) 393-9794, Dennis@tx.properties), a clickable phone link and email link, and a second embedded OpenStreetMap showing the Medina Valley / Castroville area.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-cohesive-modern-texas-luxury-visual-theme-across-the-entire-site-warm-earth-tones-sand-warm-white-deep-brown-terracotta-accents-generous-white-space-clean-sans-serif-typography-large-section-imagery-and-a-high-end-builder-aesthetic-include-a-site-footer-with-business-name-phone-email-and-copyright-add-local-business-json-ld-schema-markup-in-the-html-head-ensure-all-headings-use-proper-h1-h2-h3-hierarchy-for-seo",
+      "title": "Apply a cohesive Modern Texas Luxury visual theme across the entire site: warm earth tones (sand, warm white, deep brown, terracotta accents), generous white space, clean sans-serif typography, large section imagery, and a high-end builder aesthetic. Include a site footer with business name, phone, email, and copyright. Add Local Business JSON-LD schema markup in the HTML head. Ensure all headings use proper H1/H2/H3 hierarchy for SEO.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-existing-warm-earth-tone-color-theme-site-wide-with-a-navy-blue-palette-derived-from-the-uploaded-medina-valley-homes-logo-primary-background-color-0d1b2a-deep-navy-primary-accent-interactive-color-2b7fd4-bright-blue-text-and-contrast-color-white-and-light-gray-update-frontend-src-index-css-css-custom-properties-frontend-tailwind-config-js-color-tokens-remove-sand-earth-terracotta-palette-entries-and-all-component-level-inline-or-utility-class-color-references-across-header-hero-location-lotmap-floorplans-buildoptions-whychoose-prioritylistform-contact-footer-and-adminpage-to-use-the-new-navy-blue-scheme-consistently",
+      "title": "Replace the existing warm earth tone color theme site-wide with a navy/blue palette derived from the uploaded Medina Valley Homes logo. Primary background color: #0D1B2A (deep navy). Primary accent/interactive color: #2B7FD4 (bright blue). Text and contrast color: white and light gray. Update frontend/src/index.css CSS custom properties, frontend/tailwind.config.js color tokens (remove sand, earth, terracotta palette entries), and all component-level inline or utility class color references across Header, Hero, Location, LotMap, FloorPlans, BuildOptions, WhyChoose, PriorityListForm, Contact, Footer, and AdminPage to use the new navy/blue scheme consistently.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-medina-valley-homes-logo-image-the-uploaded-geometric-m-monogram-with-navy-background-and-bright-blue-border-to-the-sticky-header-display-the-logo-icon-followed-by-the-text-medina-valley-homes-side-by-side-place-the-logo-image-file-at-frontend-public-assets-generated-mvh-logo-png-and-render-it-as-an-img-tag-in-the-header-component-at-a-height-of-approximately-40-48px-the-logo-text-lockup-should-replace-the-current-text-only-brand-name-in-the-header",
+      "title": "Add the Medina Valley Homes logo image (the uploaded geometric 'M' monogram with navy background and bright blue border) to the sticky header. Display the logo icon followed by the text 'Medina Valley Homes' side by side. Place the logo image file at frontend/public/assets/generated/mvh-logo.png and render it as an <img> tag in the Header component at a height of approximately 40–48px. The logo + text lockup should replace the current text-only brand name in the header.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-floating-ai-sales-assistant-chatbot-component-frontend-src-components-chatbot-tsx-that-renders-as-a-chat-bubble-button-fixed-to-the-bottom-right-corner-of-the-page-visible-on-all-pages-when-clicked-it-opens-a-chat-window-panel-the-chatbot-must-follow-this-system-prompt-and-conversation-flow-1-greet-the-visitor-and-ask-if-they-are-looking-to-build-soon-or-just-exploring-2-ask-one-question-at-a-time-to-qualify-the-buyer-budget-range-build-timeline-bedrooms-bathrooms-desired-and-whether-they-are-pre-approved-3-based-on-intent-level-high-intent-6-12-month-timeline-recommend-scheduling-a-consultation-and-suggest-calling-210-393-9794-mid-intent-offer-to-share-floor-plans-and-invite-to-join-the-priority-list-low-intent-share-medina-valley-benefits-and-offer-to-capture-email-for-updates-4-handle-objections-if-comparing-builders-emphasize-medina-county-focus-and-direct-builder-access-if-not-ready-suggest-joining-the-priority-list-for-early-pricing-if-asked-about-pricing-explain-it-depends-on-lot-customization-and-offer-a-consultation-5-before-ending-the-conversation-collect-full-name-email-phone-and-desired-move-in-timeframe-6-on-lead-capture-completion-call-the-backend-submitchatlead-function-via-the-actor-hook-and-show-a-confirmation-the-chatbot-must-never-guarantee-pricing-or-availability-never-fabricate-lot-details-and-always-route-serious-buyers-to-call-210-393-9794-or-email-dennis-tx-properties-style-the-chat-bubble-and-window-using-the-site-s-navy-blue-palette-0d1b2a-background-2b7fd4-accent-white-text-mount-the-chatbot-component-globally-in-app-tsx-so-it-appears-on-all-routes",
+      "title": "Create a floating AI Sales Assistant chatbot component (`frontend/src/components/ChatBot.tsx`) that renders as a chat bubble button fixed to the bottom-right corner of the page (visible on all pages). When clicked, it opens a chat window panel. The chatbot must follow this system prompt and conversation flow: (1) Greet the visitor and ask if they are looking to build soon or just exploring. (2) Ask one question at a time to qualify the buyer: budget range, build timeline, bedrooms/bathrooms desired, and whether they are pre-approved. (3) Based on intent level — high intent (6–12 month timeline): recommend scheduling a consultation and suggest calling (210) 393-9794; mid intent: offer to share floor plans and invite to join the Priority List; low intent: share Medina Valley benefits and offer to capture email for updates. (4) Handle objections: if comparing builders, emphasize Medina County focus and direct builder access; if not ready, suggest joining the Priority List for early pricing; if asked about pricing, explain it depends on lot/customization and offer a consultation. (5) Before ending the conversation, collect full name, email, phone, and desired move-in timeframe. (6) On lead capture completion, call the backend `submitChatLead` function via the actor hook and show a confirmation. The chatbot must never guarantee pricing or availability, never fabricate lot details, and always route serious buyers to call (210) 393-9794 or email Dennis@tx.properties. Style the chat bubble and window using the site's navy/blue palette (#0D1B2A background, #2B7FD4 accent, white text). Mount the ChatBot component globally in App.tsx so it appears on all routes.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-hero-section-headline-in-frontend-src-components-hero-tsx-from-custom-homes-in-medina-valley-just-west-of-san-antonio-to-medina-valley-custom-homes",
+      "title": "Update the Hero section headline in `frontend/src/components/Hero.tsx` from 'Custom Homes in Medina Valley — Just West of San Antonio' to 'Medina Valley custom homes'.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-frontend-src-components-hero-tsx-update-the-hero-headline-text-from-medina-valley-custom-homes-to-medina-valley-custom-homes-capitalizing-the-c-in-custom-and-the-h-in-homes",
+      "title": "In `frontend/src/components/Hero.tsx`, update the hero headline text from 'Medina Valley custom homes' to 'Medina Valley Custom Homes' — capitalizing the 'C' in 'Custom' and the 'H' in 'Homes'.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Hero section with headline, subheadline, CTA buttons (View Available Homesites, Join Priority List, Call button), and drone/land imagery background",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Location section with Medina County description and embedded OpenStreetMap centered on Medina Valley/Castroville region",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Interactive lot map with ~20 placeholder numbered lots, clickable popups showing lot status (Available/Reserved/Model Coming Soon/Phase), lot size, build timeline, and Request Info button",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Floor plans section with 4 placeholder plans showing bed/bath/sqft/pricing and View Details + Inquiry buttons",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Build options section explaining semi-custom, fully custom, lot+build packages, and design consultation CTA",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Why Choose Medina Valley Homes section with bullet points and founder placeholder area",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Priority List lead capture form (name, email, phone, budget, timeline, lot interest, message) stored in IC backend with admin view",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Contact section with business info, phone, email, and embedded OpenStreetMap",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Sticky header with mobile call button, smooth scroll navigation, SEO headings, Local Business schema markup, and mobile optimization",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Create a Motoko backend actor that stores Priority List lead submissions with fields: fullName, email, phone, budgetRange, buildTimeline, interestedLot, and message. Expose public functions: submitLead (create) and getLeads (read all, for admin view). Use stable storage (Array or HashMap) so data persists across upgrades.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Replace warm earth tone theme site-wide with navy/blue palette (#0D1B2A, #2B7FD4, white). Add Medina Valley Homes logo image (icon + text) to the header.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Add AI Sales Assistant chatbot as a floating chat bubble (bottom-right corner). System prompt: qualifies buyers, captures name/email/phone/timeline, encourages Priority List signup and design consultations. Leads saved to the same IC backend as Priority List form. Chatbot visible on all pages.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Add a `submitChatLead` function to the Motoko backend actor that accepts chatbot-captured lead data (fullName, email, phone, buildTimeline) and stores it in the same stable leads array as Priority List submissions. The lead should be stored with a source field or note indicating it came from the chatbot (e.g., interestedLot = 'Chatbot', budgetRange = 'Unknown', message = the conversation summary or 'Captured via chat'). It must appear in the existing `getLeads` response so chatbot leads show up in the /admin table alongside form submissions.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Capitalize 'C' and 'H' in hero headline — change to 'Medina Valley Custom Homes'.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Medina Valley Homes",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
